@@ -1,0 +1,10 @@
+body, .info-wrap, .call-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.header, .header-links, .hero, .gallery, .call-wrap {
+    display: flex;
+    flex-direction: row;
+}
+
