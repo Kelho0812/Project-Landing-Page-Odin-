@@ -6,26 +6,22 @@ body,
   flex-direction: column;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .header,
-.header-links,
-.hero,
+.hero-wrap,
 .gallery,
 .call-card,
 .call-wrap {
   display: flex;
   flex-direction: row;
   gap: 35px;
+  padding-left: 300px;
+  padding-right: 300px;
 }
-
-/* footer,
-.header,
-.hero,
-.info-wrap,
-.quote-section,
-.call-wrap {
-  padding: 10px 20%;
-}
- */
 
 .header-links,
 .hero-secondary {
@@ -35,7 +31,7 @@ body,
 
 footer,
 .header,
-.hero {
+.hero-wrap {
   background-color: #1f2937;
 }
 
@@ -49,19 +45,21 @@ ul {
 }
 
 .header {
-  justify-content: center;
   align-items: center;
+  padding-bottom: 80px;
 }
 
 .header-logo {
   font-size: 24px;
   color: #f9faf8;
+  margin-right: auto;
 }
 
 .hero-main {
   font-size: 48px;
   font-weight: extra-bold;
   color: #f9faf8;
+  flex-wrap: nowrap;
 }
 
 button,
@@ -77,6 +75,7 @@ button,
 
 .quote-section {
   background-color: #e5e7eb;
+  padding: 120px 460px;
 }
 
 .quote-text {
@@ -86,20 +85,75 @@ button,
   color: #1f2937;
 }
 
-.hero {
+.hero-wrap {
   gap: 100px;
-  justify-content: center;
+  display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  justify-content: space-between;
+  max-height: 500px;
+  padding-bottom: 80px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
 }
 
 .hero-text {
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 280px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
 }
 
 .info-wrap {
-    align-items: center;
-    justify-content: flex-start;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 80px;
+  margin-top: 30px;
+  gap: 40px;
+}
+
+.hero-secondary {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+}
+
+.gallery {
+  justify-content: center;
+  align-items: center;
+}
+
+.push-right {
+  margin-left: auto;
+}
+
+.header-links {
+  margin-left: auto;
+  display: flex;
+  gap: 20px;
+}
+
+.gallery-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery p {
+  text-align: center;
+}
+
+.gallery img {
+  border: 2px solid #3882f6;
+  border-radius: 10%;
+}
+
+.quote-author {
+  font-size: 24px;
+  font-weight: 900;
+  text-align: end;
 }
