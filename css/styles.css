@@ -14,13 +14,12 @@ a {
 .header,
 .hero-wrap,
 .gallery,
-.call-card,
-.call-wrap {
+.call-card {
   display: flex;
   flex-direction: row;
   gap: 35px;
-  padding-left: 300px;
-  padding-right: 300px;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .header-links,
@@ -74,8 +73,9 @@ button,
 }
 
 .quote-section {
+  justify-self: center;
   background-color: #e5e7eb;
-  padding: 120px 460px;
+  padding: 30px 15%;
 }
 
 .quote-text {
@@ -89,7 +89,7 @@ button,
   gap: 100px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   max-height: 500px;
   padding-bottom: 80px;
   flex-grow: 0;
@@ -150,10 +150,47 @@ button,
 .gallery img {
   border: 2px solid #3882f6;
   border-radius: 10%;
+  flex-shrink: 2;
+}
+
+.hero-wrap img {
+  flex-shrink: 2;
 }
 
 .quote-author {
   font-size: 24px;
   font-weight: 900;
   text-align: end;
+}
+
+.call-card {
+  margin: 30px 0px;
+  margin-left: 300px;
+  margin-right: 300px;
+  color: #f9faf8;
+  border-radius: 8px;
+  padding: 10px 90px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  color: #f9faf8;
+  padding: 5px 30px;
+  border: 2px solid #f9faf8;
+  border-radius: 8px;
+}
+
+.hero-wrap button {
+  border: 2px solid;
+  border-color:#3882f6;
+}
+
+button:hover {
+  background-color: #6ba0f7;
+}
+
+footer {
+  color: #f9faf8;
+  text-align: center;
 }
